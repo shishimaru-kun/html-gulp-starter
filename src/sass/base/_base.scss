@@ -1,0 +1,124 @@
+/**
+ *
+ * base
+ *
+ */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;//10px基準にする
+	height: 100%;
+}
+
+body {
+	font-size: 1.4rem;
+	font-family: $font-sans-serif;
+	line-height: 1.75;
+	color: color(text);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	font-feature-settings: "pkna";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #fff;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	margin: 0;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+button,
+input,
+select {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	cursor: pointer;
+}
+
+[disabled] {
+	cursor: default;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button:-moz-focusring,
+input:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+button,
+input,
+select,
+textarea {
+	outline: none;
+	border: none;
+}
+
+button {
+	padding: 0;
+	background: none;
+}
+
+*:focus{
+	outline: none;
+}
+
+a {
+	color: color(link);
+	text-decoration: none;
+	transition: 0.3s ease;
+	&:hover {
+		text-decoration: none;
+		//color: color(linkhover);
+	}
+}
+
+.hide-text {
+	overflow: hidden;
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+%wf {
+	font-family: $font-web;
+}
+%wf2 {
+	font-family: $font-web2;
+}
+%wf3 {
+	font-family: $font-web3;
+}
+

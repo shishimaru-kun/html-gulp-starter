@@ -1,0 +1,103 @@
+// **************************************
+//
+// mixin.scss
+//
+// **************************************
+//--------------------------------
+// media queries
+//--------------------------------
+$breakpoints:(
+  sm: 569px,
+  md: 769px,
+  lg: 931px,
+  xl: 1200px
+);
+$breakpointsdown:(
+  sm: 568px,
+  md: 768px,
+  lg: 930px,
+  xl: 1199px
+);
+@mixin mqup($size) {
+  @media screen and (min-width: #{map-get($breakpoints, $size)}) {
+    @content;
+  }
+}
+@mixin mqdown($size) {
+  @media screen and (max-width: #{map-get($breakpointsdown, $size)}) {
+    @content;
+  }
+}
+// @include mqup(sm) {}
+// @include mqup(md) {}
+// @include mqup(lg) {}
+// @include mqup(xl) {}
+// @include mqdown(sm) {}
+// @include mqdown(md) {}
+// @include mqdown(lg) {}
+// @include mqdown(xl) {}
+
+@function color($key) {
+  @return map-get($color, $key);
+}
+// color(bg)
+
+@function width($key) {
+  @return map-get($width, $key);
+}
+// color(bg)
+
+// **************************************
+//
+// mixin
+//
+// **************************************
+
+// 要素の傾き
+@mixin transform-rotate($direct: 2) {
+  //1:上
+  @if $direct == 1 {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  //2:右
+  @else if $direct == 2 {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  //3:下
+  @else if $direct == 3 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  //4:左
+  @else if $direct == 4 {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+// 矢印 > ←こういうやつ
+@mixin arrow($color: #999, $width: 8px, $height: 8px, $borderWidth: 2px, $arrow-direction: 2, $arrow-positon: 1 , $position-x: 10px, $position-y: 42%) {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: $width;
+    height: $height;
+    position: absolute;
+  @if $arrow-positon == 1 { //right
+    right: $position-x;
+  }
+  @else if $arrow-positon == 2 { //left
+    left: $position-x;
+  }
+    top: $position-y;
+    border-style: solid;
+    border-width: $borderWidth;
+    border-color: $color;
+    border-left: none !important;
+    border-top: none !important;
+    @include transform-rotate($arrow-direction);
+  }
+}

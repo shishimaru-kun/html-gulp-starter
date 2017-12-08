@@ -1,0 +1,71 @@
+//**
+// *
+// * globalvars
+// *
+// */
+
+//--------------------------------
+// color
+//--------------------------------
+$color:(
+	bg: #fff,
+	bg-dark: #eee,
+	bg-light: #f6f6f6,
+	text: #626262,
+	text-dark: #404040,
+	text-light: #959595,
+	link: #0073bd,
+	linkhover: #ae8700,
+	border: #dcdcdc,
+	border-dark: #626262,
+	border-light: #ececec,
+	brand: #1558a0,
+	button: #856520,
+	buttonhover: #ae8700,
+	red: #c80202,
+	green: #094324,
+	blue: #1558a0,
+	orange: #ffa800,
+	facebook: #3b5998,
+	twitter: #55acee,
+);
+
+//--------------------------------
+// width
+//--------------------------------
+$width:(
+	base: 1024px,
+);
+
+//--------------------------------
+// space-size
+//--------------------------------
+$space:(
+	base : 20px,
+	small : 10px,
+	wide : 40px,
+	exwide : 80px,
+	grid : 5px,
+	lp: 200px,
+);
+
+//--------------------------------
+// font-family
+//--------------------------------
+
+$font-serif      : Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+$font-sans-serif : -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic,YuGothicM, "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+$font-web	 	 : "";
+$font-web2	 	 : "";
+$font-web3	 	 : "";
+
+//--------------------------------
+// namespace
+//--------------------------------
+$ns : 'default' !default;
+
+//--------------------------------
+// image directry path
+//--------------------------------
+$images: '../images' !default;
+

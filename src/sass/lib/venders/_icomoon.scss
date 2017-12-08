@@ -1,0 +1,156 @@
+//--------------------------------
+// icomoon-font-variables
+//--------------------------------
+$icomoon-font-path: "/fonts" !default;
+$icon-mail: "\e908";
+$icon-arrow-down: "\e909";
+$icon-arrow-left: "\e90a";
+$icon-arrow-right: "\e90b";
+$icon-arrow-up: "\e90c";
+$icon-close: "\e90d";
+$icon-external2: "\e90e";
+$icon-home: "\e90f";
+$icon-dropdown: "\e91a";
+$icon-dropup: "\e91b";
+$icon-arrow-left-double: "\e922";
+$icon-arrow-right-double: "\e923";
+$icon-facebook: "\ea90";
+$icon-facebook2: "\ea91";
+$icon-twitter: "\ea96";
+$icon-google-plus: "\ea8b";
+$icon-line: "\e921";
+$icon-instagram: "\ea92";
+$icon-linkedin: "\e907";
+$icon-zigsow_logo: "\e900";
+$icon-runway_logo: "\e910";
+
+@font-face {
+  font-family: 'icon-base';
+  src:
+    url('#{$icomoon-font-path}/icon-base.ttf?8t7a2g') format('truetype'),
+    url('#{$icomoon-font-path}/icon-base.woff?8t7a2g') format('woff'),
+    url('#{$icomoon-font-path}/icon-base.svg?8t7a2g#icon-base') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-base' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail {
+  &:before {
+    content: $icon-mail;
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left;
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right;
+  }
+}
+.icon-arrow-up {
+  &:before {
+    content: $icon-arrow-up;
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+.icon-external2 {
+  &:before {
+    content: $icon-external2;
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home;
+  }
+}
+.icon-dropdown {
+  &:before {
+    content: $icon-dropdown;
+  }
+}
+.icon-dropup {
+  &:before {
+    content: $icon-dropup;
+  }
+}
+.icon-arrow-left-double {
+  &:before {
+    content: $icon-arrow-left-double;
+  }
+}
+.icon-arrow-right-double {
+  &:before {
+    content: $icon-arrow-right-double;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-facebook2 {
+  &:before {
+    content: $icon-facebook2;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-google-plus {
+  &:before {
+    content: $icon-google-plus;
+  }
+}
+.icon-line {
+  &:before {
+    content: $icon-line;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
+.icon-zigsow_logo {
+  &:before {
+    content: $icon-zigsow_logo;
+  }
+}
+.icon-runway_logo {
+  &:before {
+    content: $icon-runway_logo;
+  }
+}
